@@ -1,10 +1,14 @@
 # ChatBerry - An AI-Powered Chatbot
 
+<video>
+    <source src="/demo.mp4" />
+</video>
+
 ## Overview
 ChatBerry is a stateful chatbot designed to provide engaging and meaningful conversations. Built using advanced natural language processing techniques, it leverages the power of AI to understand and respond to user inputs effectively. The project is hosted on Hugging Face Spaces and offers a seamless web-based interface for interaction. Whether you're looking to explore AI-driven conversational agents or integrate a chatbot into your application, ChatBerry serves as a robust starting point.
 
 ## Live
-🔹 Live App: 
+🔹 Live App: [https://chatberry.up.railway.app/](https://chatberry.up.railway.app/)
 
 
 ## Features
@@ -77,6 +81,10 @@ ChatBerry is a stateful chatbot designed to provide engaging and meaningful conv
     chainlit run src/main.py -w
     ```
 2. Interact with the chatbot through the web interface.
+
+
+## Issues
+If you encounter any issues or have suggestions for improvement, please feel free to open an issue on the [GitHub repository](https://github.com/syeda-hoorain-ali/chatberry/issues). Provide as much detail as possible, including steps to reproduce the issue, expected behavior, and any relevant logs or screenshots.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
