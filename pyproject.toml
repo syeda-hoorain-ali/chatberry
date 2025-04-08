@@ -1,0 +1,16 @@
+[project]
+name = "chatberry"
+version = "0.1.0"
+description = "A Python-based chatbot designed for interactive and meaningful conversations."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "asyncpg>=0.30.0",
+    "chainlit>=2.4.400",
+    "google-generativeai>=0.8.4",
+    "python-dotenv>=1.1.0",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
