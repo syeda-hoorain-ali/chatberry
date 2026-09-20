@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Camera Test App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Camera Test App</h1>
+        <a class="gallery-link" href="{{ url_for('gallery') }}">Gallery</a>
+    </header>
+
+    <main>
+        <div class="camera-wrap">
+            <video id="video" autoplay playsinline muted></video>
+            <canvas id="canvas" hidden></canvas>
+        </div>
+
+        <p id="status" class="status"></p>
+
+        <div class="controls">
+            <button id="switchBtn" type="button">Switch Camera</button>
+            <button id="captureBtn" type="button">Capture Photo</button>
+        </div>
+
+        <div id="preview" class="preview" hidden>
+            <img id="previewImg" alt="Captured photo preview">
+            <button id="retakeBtn" type="button">Retake</button>
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/camera.js') }}"></script>
+</body>
+</html>
