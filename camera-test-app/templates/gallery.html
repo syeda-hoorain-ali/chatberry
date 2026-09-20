@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Camera Test App - Gallery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Captured Photos</h1>
+        <a class="gallery-link" href="{{ url_for('index') }}">Back to Camera</a>
+    </header>
+
+    <main>
+        {% if images %}
+        <div class="grid">
+            {% for image in images %}
+            <img src="{{ image }}" alt="Captured photo" loading="lazy">
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="status">No photos captured yet.</p>
+        {% endif %}
+    </main>
+</body>
+</html>
